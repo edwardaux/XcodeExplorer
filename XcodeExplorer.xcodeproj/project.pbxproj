@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF46ED351665E5C2005C71E1 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = BF46ED341665E5C2005C71E1 /* readme.md */; };
+		BF46ED3B1665E79A005C71E1 /* XCEPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = BF46ED3A1665E79A005C71E1 /* XCEPlugin.m */; };
+		BF46ED3F1665EA90005C71E1 /* XCENotificationsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF46ED3D1665EA90005C71E1 /* XCENotificationsWindowController.m */; };
+		BF46ED401665EA90005C71E1 /* XCENotificationsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF46ED3E1665EA90005C71E1 /* XCENotificationsWindowController.xib */; };
 		BFAE66A31665E55D00F47322 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAE66A21665E55D00F47322 /* Cocoa.framework */; };
 		BFAE66AD1665E55D00F47322 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFAE66AB1665E55D00F47322 /* InfoPlist.strings */; };
+		BFF3E82E16663A6C004B8249 /* LICENSE.TXT in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E82D16663A6C004B8249 /* LICENSE.TXT */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BFAE669F1665E55D00F47322 /* XcodeExplorer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeExplorer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF46ED341665E5C2005C71E1 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = readme.md; path = ../readme.md; sourceTree = "<group>"; };
+		BF46ED391665E79A005C71E1 /* XCEPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XCEPlugin.h; path = Classes/XCEPlugin.h; sourceTree = SOURCE_ROOT; };
+		BF46ED3A1665E79A005C71E1 /* XCEPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XCEPlugin.m; path = Classes/XCEPlugin.m; sourceTree = SOURCE_ROOT; };
+		BF46ED3C1665EA90005C71E1 /* XCENotificationsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XCENotificationsWindowController.h; path = ../Classes/XCENotificationsWindowController.h; sourceTree = "<group>"; };
+		BF46ED3D1665EA90005C71E1 /* XCENotificationsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XCENotificationsWindowController.m; path = ../Classes/XCENotificationsWindowController.m; sourceTree = "<group>"; };
+		BF46ED3E1665EA90005C71E1 /* XCENotificationsWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XCENotificationsWindowController.xib; path = ../Classes/XCENotificationsWindowController.xib; sourceTree = "<group>"; };
+		BFAE669F1665E55D00F47322 /* XcodeExplorer.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeExplorer.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFAE66A21665E55D00F47322 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		BFAE66A51665E55D00F47322 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		BFAE66A61665E55D00F47322 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		BFAE66A71665E55D00F47322 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BFAE66AA1665E55D00F47322 /* XcodeExplorer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XcodeExplorer-Info.plist"; sourceTree = "<group>"; };
 		BFAE66AC1665E55D00F47322 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BFAE66AE1665E55D00F47322 /* XcodeExplorer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XcodeExplorer-Prefix.pch"; sourceTree = "<group>"; };
+		BFF3E82D16663A6C004B8249 /* LICENSE.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.TXT; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +44,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF46ED381665E768005C71E1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BF46ED3C1665EA90005C71E1 /* XCENotificationsWindowController.h */,
+				BF46ED3D1665EA90005C71E1 /* XCENotificationsWindowController.m */,
+				BF46ED3E1665EA90005C71E1 /* XCENotificationsWindowController.xib */,
+				BF46ED391665E79A005C71E1 /* XCEPlugin.h */,
+				BF46ED3A1665E79A005C71E1 /* XCEPlugin.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		BFAE66941665E55D00F47322 = {
 			isa = PBXGroup;
 			children = (
@@ -46,7 +68,7 @@
 		BFAE66A01665E55D00F47322 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BFAE669F1665E55D00F47322 /* XcodeExplorer.bundle */,
+				BFAE669F1665E55D00F47322 /* XcodeExplorer.xcplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,25 +76,16 @@
 		BFAE66A11665E55D00F47322 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFAE66A71665E55D00F47322 /* Foundation.framework */,
 				BFAE66A21665E55D00F47322 /* Cocoa.framework */,
-				BFAE66A41665E55D00F47322 /* Other Frameworks */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BFAE66A41665E55D00F47322 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BFAE66A51665E55D00F47322 /* AppKit.framework */,
-				BFAE66A61665E55D00F47322 /* CoreData.framework */,
-				BFAE66A71665E55D00F47322 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
 		BFAE66A81665E55D00F47322 /* XcodeExplorer */ = {
 			isa = PBXGroup;
 			children = (
+				BF46ED381665E768005C71E1 /* Classes */,
 				BFAE66A91665E55D00F47322 /* Supporting Files */,
 			);
 			path = XcodeExplorer;
@@ -81,9 +94,11 @@
 		BFAE66A91665E55D00F47322 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BF46ED341665E5C2005C71E1 /* readme.md */,
 				BFAE66AA1665E55D00F47322 /* XcodeExplorer-Info.plist */,
 				BFAE66AB1665E55D00F47322 /* InfoPlist.strings */,
 				BFAE66AE1665E55D00F47322 /* XcodeExplorer-Prefix.pch */,
+				BFF3E82D16663A6C004B8249 /* LICENSE.TXT */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -105,7 +120,7 @@
 			);
 			name = XcodeExplorer;
 			productName = XcodeExplorer;
-			productReference = BFAE669F1665E55D00F47322 /* XcodeExplorer.bundle */;
+			productReference = BFAE669F1665E55D00F47322 /* XcodeExplorer.xcplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -140,6 +155,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFAE66AD1665E55D00F47322 /* InfoPlist.strings in Resources */,
+				BF46ED351665E5C2005C71E1 /* readme.md in Resources */,
+				BF46ED401665EA90005C71E1 /* XCENotificationsWindowController.xib in Resources */,
+				BFF3E82E16663A6C004B8249 /* LICENSE.TXT in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +168,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF46ED3B1665E79A005C71E1 /* XCEPlugin.m in Sources */,
+				BF46ED3F1665EA90005C71E1 /* XCENotificationsWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,12 +242,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				GCC_ENABLE_OBJC_GC = supported;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XcodeExplorer/XcodeExplorer-Prefix.pch";
 				INFOPLIST_FILE = "XcodeExplorer/XcodeExplorer-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
+				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Debug;
 		};
@@ -235,12 +258,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				GCC_ENABLE_OBJC_GC = supported;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XcodeExplorer/XcodeExplorer-Prefix.pch";
 				INFOPLIST_FILE = "XcodeExplorer/XcodeExplorer-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
+				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Release;
 		};
@@ -263,6 +289,7 @@
 				BFAE66B31665E55D00F47322 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
