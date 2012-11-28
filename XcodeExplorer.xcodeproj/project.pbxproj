@@ -17,19 +17,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BF46ED341665E5C2005C71E1 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = readme.md; path = ../readme.md; sourceTree = "<group>"; };
-		BF46ED391665E79A005C71E1 /* XCEPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XCEPlugin.h; path = Classes/XCEPlugin.h; sourceTree = SOURCE_ROOT; };
-		BF46ED3A1665E79A005C71E1 /* XCEPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XCEPlugin.m; path = Classes/XCEPlugin.m; sourceTree = SOURCE_ROOT; };
-		BF46ED3C1665EA90005C71E1 /* XCENotificationsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XCENotificationsWindowController.h; path = ../Classes/XCENotificationsWindowController.h; sourceTree = "<group>"; };
-		BF46ED3D1665EA90005C71E1 /* XCENotificationsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XCENotificationsWindowController.m; path = ../Classes/XCENotificationsWindowController.m; sourceTree = "<group>"; };
-		BF46ED3E1665EA90005C71E1 /* XCENotificationsWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XCENotificationsWindowController.xib; path = ../Classes/XCENotificationsWindowController.xib; sourceTree = "<group>"; };
+		BF46ED341665E5C2005C71E1 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.md; sourceTree = SOURCE_ROOT; };
+		BF46ED391665E79A005C71E1 /* XCEPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCEPlugin.h; sourceTree = "<group>"; };
+		BF46ED3A1665E79A005C71E1 /* XCEPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCEPlugin.m; sourceTree = "<group>"; };
+		BF46ED3C1665EA90005C71E1 /* XCENotificationsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCENotificationsWindowController.h; sourceTree = "<group>"; };
+		BF46ED3D1665EA90005C71E1 /* XCENotificationsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCENotificationsWindowController.m; sourceTree = "<group>"; };
+		BF46ED3E1665EA90005C71E1 /* XCENotificationsWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCENotificationsWindowController.xib; sourceTree = "<group>"; };
 		BFAE669F1665E55D00F47322 /* XcodeExplorer.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeExplorer.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFAE66A21665E55D00F47322 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		BFAE66A71665E55D00F47322 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BFAE66AA1665E55D00F47322 /* XcodeExplorer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XcodeExplorer-Info.plist"; sourceTree = "<group>"; };
 		BFAE66AC1665E55D00F47322 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BFAE66AE1665E55D00F47322 /* XcodeExplorer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XcodeExplorer-Prefix.pch"; sourceTree = "<group>"; };
-		BFF3E82D16663A6C004B8249 /* LICENSE.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.TXT; sourceTree = "<group>"; };
+		BFF3E82D16663A6C004B8249 /* LICENSE.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.TXT; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,15 @@
 				BF46ED391665E79A005C71E1 /* XCEPlugin.h */,
 				BF46ED3A1665E79A005C71E1 /* XCEPlugin.m */,
 			);
-			name = Classes;
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		BF69E4A716673E1C0045B66C /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE66AB1665E55D00F47322 /* InfoPlist.strings */,
+			);
+			path = en.lproj;
 			sourceTree = "<group>";
 		};
 		BFAE66941665E55D00F47322 = {
@@ -86,22 +94,30 @@
 			isa = PBXGroup;
 			children = (
 				BF46ED381665E768005C71E1 /* Classes */,
-				BFAE66A91665E55D00F47322 /* Supporting Files */,
+				BFAE66A91665E55D00F47322 /* Resources */,
+				BFF3E8B41666C1A5004B8249 /* Other Sources */,
+				BFF3E82D16663A6C004B8249 /* LICENSE.TXT */,
+				BF46ED341665E5C2005C71E1 /* readme.md */,
 			);
 			path = XcodeExplorer;
 			sourceTree = "<group>";
 		};
-		BFAE66A91665E55D00F47322 /* Supporting Files */ = {
+		BFAE66A91665E55D00F47322 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BF46ED341665E5C2005C71E1 /* readme.md */,
+				BF69E4A716673E1C0045B66C /* en.lproj */,
 				BFAE66AA1665E55D00F47322 /* XcodeExplorer-Info.plist */,
-				BFAE66AB1665E55D00F47322 /* InfoPlist.strings */,
-				BFAE66AE1665E55D00F47322 /* XcodeExplorer-Prefix.pch */,
-				BFF3E82D16663A6C004B8249 /* LICENSE.TXT */,
 			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFF3E8B41666C1A5004B8249 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE66AE1665E55D00F47322 /* XcodeExplorer-Prefix.pch */,
+			);
+			path = "Other Sources";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -182,6 +198,7 @@
 				BFAE66AC1665E55D00F47322 /* en */,
 			);
 			name = InfoPlist.strings;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -246,8 +263,8 @@
 				DSTROOT = "$(HOME)";
 				GCC_ENABLE_OBJC_GC = supported;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "XcodeExplorer/XcodeExplorer-Prefix.pch";
-				INFOPLIST_FILE = "XcodeExplorer/XcodeExplorer-Info.plist";
+				GCC_PREFIX_HEADER = "Other Sources/XcodeExplorer-Prefix.pch";
+				INFOPLIST_FILE = "Resources/XcodeExplorer-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xcplugin;
@@ -262,8 +279,8 @@
 				DSTROOT = "$(HOME)";
 				GCC_ENABLE_OBJC_GC = supported;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "XcodeExplorer/XcodeExplorer-Prefix.pch";
-				INFOPLIST_FILE = "XcodeExplorer/XcodeExplorer-Info.plist";
+				GCC_PREFIX_HEADER = "Other Sources/XcodeExplorer-Prefix.pch";
+				INFOPLIST_FILE = "Resources/XcodeExplorer-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xcplugin;
