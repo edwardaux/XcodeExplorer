@@ -3,9 +3,10 @@ This is a plugin project that allows you, as a developer, to explore
 the various events and notifications that Xcode4 emits during normal
 operations.
 
-There is some supplemental information that can be found in a 
-[post](http://www.blackdogfoundry.com/blog/xcodeexplorer-monitor-xcode4-internals/)
-on the BlackDog Foundry blog.
+There is some supplemental information that can be found in a the following posts:
+
+* [Monitoring Xcode4 Internals](http://www.blackdogfoundry.com/blog/xcodeexplorer-monitor-xcode4-internals/)
+* [Looking at Xcode4 Controls](http://www.blackdogfoundry.com/blog/xcodeexplorer-checking-out-the-controls/)
 
 ## Installation ##
 Installation is extremely simple.  
@@ -15,7 +16,9 @@ Installation is extremely simple.
 * Restart Xcode
 
 ## Usage ##
-The plugin adds a menu called `Explorer` that has an item titled `Notifications`.  
+The plugin adds a menu called `Explorer` that has a couple of menu items that you can choose from.
+
+### Notifications ###
 Selecting this menu item will open a floating window that you can use to view the
 notifications as they occur.  You can enter some comma-separated regular expressions
 into the text field to exclude notifications that you don't care about (for example,
@@ -24,3 +27,8 @@ to excluding them using the pattern `NS.*`).
 
 Be careful with your regular expressions.  If you type in an invalid one, it just 
 silently ignores it.
+
+### View Clicker ###
+This allows you to click around on the various Xcode controls (buttons, text, etc)
+to see where they are located in the hierarchy (and what type they are).  When you
+click on a view/button/textfield, it displays the view hierarchy.
