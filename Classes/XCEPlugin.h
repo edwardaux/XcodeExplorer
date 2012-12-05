@@ -8,9 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 #import "XCENotificationsWindowController.h"
+#import "XCEViewClickerWindowController.h"
 
 @interface XCEPlugin : NSObject
 
 @property (nonatomic,retain) XCENotificationsWindowController *notificationsController;
+@property (nonatomic,retain) XCEViewClickerWindowController *viewClickerController;
 
 @end

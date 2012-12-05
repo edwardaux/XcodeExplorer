@@ -39,6 +39,9 @@ static XCEPlugin *mySharedPlugin = nil;
 	NSMenuItem *item1 = [[NSMenuItem alloc] initWithTitle:@"Notifications" action:@selector(notificationsMenuClicked:) keyEquivalent:@""];
 	[item1 setTarget:self];
 	[menu addItem:item1];
+	NSMenuItem *item2 = [[NSMenuItem alloc] initWithTitle:@"View Clicker" action:@selector(viewClickerMenuClicked:) keyEquivalent:@""];
+	[item2 setTarget:self];
+	[menu addItem:item2];
 	// add the newly created menu to the main menu bar
 	NSMenuItem *newMenuItem = [[NSMenuItem alloc] initWithTitle:@"Explorer" action:NULL keyEquivalent:@""];
 	[newMenuItem setSubmenu:menu];
@@ -50,6 +53,13 @@ static XCEPlugin *mySharedPlugin = nil;
 		[self setNotificationsController:[[[XCENotificationsWindowController alloc] init] autorelease]];
 	}
 	[[self notificationsController] showWindow:[NSApp mainWindow]];
+}
+
+-(void)viewClickerMenuClicked:(id)sender {
+	if ([self viewClickerController] == nil) {
+		[self setViewClickerController:[[[XCEViewClickerWindowController alloc] init] autorelease]];
+	}
+	[[self viewClickerController] showWindow:[NSApp mainWindow]];
 }
 
 -(void)dealloc {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF1DB9AE166E917800EF717B /* XCEViewClickerWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1DB9AC166E917800EF717B /* XCEViewClickerWindowController.m */; };
+		BF1DB9AF166E917800EF717B /* XCEViewClickerWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF1DB9AD166E917800EF717B /* XCEViewClickerWindowController.xib */; };
 		BF46ED351665E5C2005C71E1 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = BF46ED341665E5C2005C71E1 /* readme.md */; };
 		BF46ED3B1665E79A005C71E1 /* XCEPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = BF46ED3A1665E79A005C71E1 /* XCEPlugin.m */; };
 		BF46ED3F1665EA90005C71E1 /* XCENotificationsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF46ED3D1665EA90005C71E1 /* XCENotificationsWindowController.m */; };
@@ -17,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF1DB9AB166E917800EF717B /* XCEViewClickerWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCEViewClickerWindowController.h; sourceTree = "<group>"; };
+		BF1DB9AC166E917800EF717B /* XCEViewClickerWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCEViewClickerWindowController.m; sourceTree = "<group>"; };
+		BF1DB9AD166E917800EF717B /* XCEViewClickerWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCEViewClickerWindowController.xib; sourceTree = "<group>"; };
 		BF46ED341665E5C2005C71E1 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.md; sourceTree = SOURCE_ROOT; };
 		BF46ED391665E79A005C71E1 /* XCEPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCEPlugin.h; sourceTree = "<group>"; };
 		BF46ED3A1665E79A005C71E1 /* XCEPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCEPlugin.m; sourceTree = "<group>"; };
@@ -50,6 +55,9 @@
 				BF46ED3C1665EA90005C71E1 /* XCENotificationsWindowController.h */,
 				BF46ED3D1665EA90005C71E1 /* XCENotificationsWindowController.m */,
 				BF46ED3E1665EA90005C71E1 /* XCENotificationsWindowController.xib */,
+				BF1DB9AB166E917800EF717B /* XCEViewClickerWindowController.h */,
+				BF1DB9AC166E917800EF717B /* XCEViewClickerWindowController.m */,
+				BF1DB9AD166E917800EF717B /* XCEViewClickerWindowController.xib */,
 				BF46ED391665E79A005C71E1 /* XCEPlugin.h */,
 				BF46ED3A1665E79A005C71E1 /* XCEPlugin.m */,
 			);
@@ -174,6 +182,7 @@
 				BF46ED351665E5C2005C71E1 /* readme.md in Resources */,
 				BF46ED401665EA90005C71E1 /* XCENotificationsWindowController.xib in Resources */,
 				BFF3E82E16663A6C004B8249 /* LICENSE.TXT in Resources */,
+				BF1DB9AF166E917800EF717B /* XCEViewClickerWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +195,7 @@
 			files = (
 				BF46ED3B1665E79A005C71E1 /* XCEPlugin.m in Sources */,
 				BF46ED3F1665EA90005C71E1 /* XCENotificationsWindowController.m in Sources */,
+				BF1DB9AE166E917800EF717B /* XCEViewClickerWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
