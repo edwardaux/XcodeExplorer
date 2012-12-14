@@ -7,6 +7,7 @@
 //
 
 #import "XCEViewClickerWindowController.h"
+#import <objc/objc.h>
 
 @implementation XCEViewClickerWindowController
 
@@ -20,7 +21,17 @@
 
 -(void)registerClickListener {
 	[NSEvent addLocalMonitorForEventsMatchingMask:NSLeftMouseDownMask handler:^(NSEvent *event) {
-		NSView *view = [[[NSApp mainWindow] contentView] hitTest:[event locationInWindow]];
+		NSView *view = [[[NSApp keyWindow] contentView] hitTest:[event locationInWindow]];
+		
+		NSString *info = @"";
+		if ([view isKindOfClass:[NSControl class]]) {
+			NSControl *control = (NSButton *)view;
+			id target = [control target];
+			SEL action = [control action];
+			if (target != nil && action != nil) {
+				info = [NSString stringWithFormat:@"Target=[%@ %s]\n\n", [target class], sel_getName(action)];
+			}
+		}
 		
 		// traverse up the view hierarchy collecting views as we go
 		NSMutableArray *views = [NSMutableArray array];
@@ -31,7 +42,7 @@
 		
 		// now let's start at the top of the hierarchy and build something
 		// that we can dump out and view
-		NSMutableString *output = [NSMutableString string];
+		NSMutableString *output = [NSMutableString stringWithString:info];
 		if ([views count] == 0) {
 			[output appendString:@"Unable to determine view"];
 		}
