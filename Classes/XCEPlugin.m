@@ -32,8 +32,7 @@ static XCEPlugin *mySharedPlugin = nil;
 }
 
 -(void)addMenuItems {
-	NSMenu *mainMenu = [NSApp mainMenu];
-	
+
 	// create a new menu and add a new item
 	NSMenu *menu = [[NSMenu alloc] initWithTitle:@"Explorer"];
 	NSMenuItem *item1 = [[NSMenuItem alloc] initWithTitle:@"Notifications" action:@selector(notificationsMenuClicked:) keyEquivalent:@""];
@@ -45,7 +44,11 @@ static XCEPlugin *mySharedPlugin = nil;
 	// add the newly created menu to the main menu bar
 	NSMenuItem *newMenuItem = [[NSMenuItem alloc] initWithTitle:@"Explorer" action:NULL keyEquivalent:@""];
 	[newMenuItem setSubmenu:menu];
-	[mainMenu addItem:newMenuItem];
+    
+    NSMenuItem *menuItem = [[NSApp mainMenu] itemWithTitle:@"Window"];
+    
+    NSInteger organizerMenuItem = [[menuItem submenu] indexOfItemWithTitle:@"Organizer"];
+    [[menuItem submenu] insertItem:newMenuItem atIndex:organizerMenuItem +1];
 }
 
 -(void)notificationsMenuClicked:(id)sender {
