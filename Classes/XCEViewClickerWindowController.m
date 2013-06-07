@@ -25,7 +25,7 @@
         // Don't track clicks on my windows
         if( [event.window isEqual: currentViewContents.window] ) return event;
         
-		NSView *view = [[[NSApp keyWindow] contentView] hitTest:[event locationInWindow]];
+		NSView *view = [[event.window contentView] hitTest:[event locationInWindow]];
 
 		NSString *info = @"";
 		if ([view isKindOfClass:[NSControl class]]) {
