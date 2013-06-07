@@ -27,6 +27,17 @@
         
 		NSView *view = [[event.window contentView] hitTest:[event locationInWindow]];
 
+        // If we didn't found view in contentView check toolbar
+        if( !view ){
+            for( NSToolbarItem *toolbarItem in event.window.toolbar.visibleItems ){
+                NSRect rectInWindow = [toolbarItem.view convertRect:toolbarItem.view.bounds toView:nil];
+                if( CGRectContainsPoint(rectInWindow, [event locationInWindow]) ){
+                    view = toolbarItem.view;
+                    break;
+                }
+            }
+        }
+        
 		NSString *info = @"";
 		if ([view isKindOfClass:[NSControl class]]) {
 			NSControl *control = (NSButton *)view;
