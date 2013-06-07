@@ -21,8 +21,12 @@
 
 -(void)registerClickListener {
 	[NSEvent addLocalMonitorForEventsMatchingMask:NSLeftMouseDownMask handler:^(NSEvent *event) {
-		NSView *view = [[[NSApp keyWindow] contentView] hitTest:[event locationInWindow]];
 		
+        // Don't track clicks on my windows
+        if( [event.window isEqual: currentViewContents.window] ) return event;
+        
+		NSView *view = [[[NSApp keyWindow] contentView] hitTest:[event locationInWindow]];
+
 		NSString *info = @"";
 		if ([view isKindOfClass:[NSControl class]]) {
 			NSControl *control = (NSButton *)view;
