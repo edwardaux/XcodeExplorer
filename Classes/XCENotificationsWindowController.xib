@@ -168,7 +168,7 @@
 													<double key="NSMaxWidth">1000</double>
 													<object class="NSTableHeaderCell" key="NSHeaderCell">
 														<int key="NSCellFlags">75497536</int>
-														<int key="NSCellFlags2">2048</int>
+														<int key="NSCellFlags2">134219776</int>
 														<string key="NSContents">Count</string>
                                                         <object class="NSFont" key="NSSupport" id="26">
                                                             <string key="NSName">LucidaGrande</string>
@@ -188,7 +188,7 @@
 													</object>
 													<object class="NSTextFieldCell" key="NSDataCell" id="171021278">
 														<int key="NSCellFlags">337641536</int>
-														<int key="NSCellFlags2">2048</int>
+														<int key="NSCellFlags2">134219776</int>
 														<string key="NSContents">Text Cell</string>
 														<reference key="NSSupport" ref="768274349"/>
 														<reference key="NSControlView" ref="743990417"/>
