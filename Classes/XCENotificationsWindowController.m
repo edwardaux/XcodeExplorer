@@ -54,8 +54,27 @@
 			return;
 	}
 
-	[notifications addObject:notification];
+    // get last notifications list
+    NSMutableArray *lastNotificationList = [notifications lastObject];
+    
+    NSNotification *lastNotification = [lastNotificationList lastObject];
+    
+    // check if notification is same as in list
+    if( [notification.name isEqualToString:lastNotification.name] && (notification.object == lastNotification.object || [notification.object isEqual:lastNotification.object]) && (notification.userInfo == lastNotification.userInfo || [notification.userInfo isEqualToDictionary:lastNotification.userInfo]) ){
+        [lastNotificationList addObject: notification];
+    }
+    // if not the same add it to list
+    else{
+        [notifications addObject: [NSMutableArray arrayWithObject:notification]];
+    }
+
 	[tableView reloadData];
+    
+    // scroll to last notification if window is not active
+    if( [[self window] isKeyWindow] == NO ){
+        [tableView scrollRowToVisible: notifications.count -1];
+    }
+
 }
 
 -(void)parseRegexTextField {
@@ -81,8 +100,14 @@
 }
 
 -(id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
-	NSNotification *notification = notifications[row];
-	if ([[tableColumn identifier] isEqualToString:@"name"]) {
+    // get last list
+    NSMutableArray *lastNotificationList = notifications[row];
+    
+	NSNotification *notification = [lastNotificationList lastObject];
+    if( [[tableColumn identifier] isEqualToString:@"count"] ){
+        return [NSString stringWithFormat:@"%lu", (unsigned long)lastNotificationList.count];
+    }
+	else if ([[tableColumn identifier] isEqualToString:@"name"]) {
 		return [notification name];
 	}
 	else if ([[tableColumn identifier] isEqualToString:@"object"]) {
