@@ -46,7 +46,7 @@
 				<nil key="NSUserInterfaceItemIdentifier"/>
 				<object class="NSView" key="NSWindowView" id="779811820">
 					<reference key="NSNextResponder"/>
-					<int key="NSvFlags">268</int>
+					<int key="NSvFlags">256</int>
 					<array class="NSMutableArray" key="NSSubviews">
 						<object class="NSScrollView" id="403603971">
 							<reference key="NSNextResponder" ref="779811820"/>
