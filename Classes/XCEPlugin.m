@@ -53,21 +53,17 @@ static XCEPlugin *mySharedPlugin = nil;
 
 -(void)notificationsMenuClicked:(id)sender {
 	if ([self notificationsController] == nil) {
-		[self setNotificationsController:[[[XCENotificationsWindowController alloc] init] autorelease]];
+		[self setNotificationsController:[[XCENotificationsWindowController alloc] init]];
 	}
 	[[self notificationsController] showWindow:[NSApp mainWindow]];
 }
 
 -(void)viewClickerMenuClicked:(id)sender {
 	if ([self viewClickerController] == nil) {
-		[self setViewClickerController:[[[XCEViewClickerWindowController alloc] init] autorelease]];
+		[self setViewClickerController:[[XCEViewClickerWindowController alloc] init]];
 	}
 	[[self viewClickerController] showWindow:[NSApp mainWindow]];
 }
 
--(void)dealloc {
-	[_notificationsController release];
-	[super dealloc];
-}
 
 @end
