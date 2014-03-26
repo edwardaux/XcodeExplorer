@@ -153,7 +153,7 @@
 		BFAE66961665E55D00F47322 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "BlackDog Foundry";
 			};
 			buildConfigurationList = BFAE66991665E55D00F47322 /* Build configuration list for PBXProject "XcodeExplorer" */;
@@ -268,10 +268,11 @@
 		BFAE66B21665E55D00F47322 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "$(HOME)";
-				GCC_ENABLE_OBJC_GC = supported;
+				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Other Sources/XcodeExplorer-Prefix.pch";
 				INFOPLIST_FILE = "Resources/XcodeExplorer-Info.plist";
@@ -284,10 +285,11 @@
 		BFAE66B31665E55D00F47322 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "$(HOME)";
-				GCC_ENABLE_OBJC_GC = supported;
+				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Other Sources/XcodeExplorer-Prefix.pch";
 				INFOPLIST_FILE = "Resources/XcodeExplorer-Info.plist";

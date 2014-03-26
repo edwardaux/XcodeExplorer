@@ -13,8 +13,8 @@
 -(id)init {
 	self = [super initWithWindowNibName:@"XCENotificationsWindowController"];
 	if (self) {
-		notifications = [[NSMutableArray array] retain];
-		regularExpressions = [[NSMutableArray array] retain];
+		notifications = [NSMutableArray array];
+		regularExpressions = [NSMutableArray array];
 	}
 	return self;
 }
@@ -129,9 +129,5 @@
 	return @"Yikes!";
 }
 
--(void)dealloc {
-	[notifications release];
-	[super dealloc];
-}
 
 @end

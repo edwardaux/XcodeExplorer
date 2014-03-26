@@ -76,9 +76,5 @@
 	}];
 }
 
--(void)dealloc {
-	[currentViewContents release];
-	[super dealloc];
-}
 
 @end

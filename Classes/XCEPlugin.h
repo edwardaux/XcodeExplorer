@@ -12,7 +12,7 @@
 
 @interface XCEPlugin : NSObject
 
-@property (nonatomic,retain) XCENotificationsWindowController *notificationsController;
-@property (nonatomic,retain) XCEViewClickerWindowController *viewClickerController;
+@property (nonatomic,strong) XCENotificationsWindowController *notificationsController;
+@property (nonatomic,strong) XCEViewClickerWindowController *viewClickerController;
 
 @end
