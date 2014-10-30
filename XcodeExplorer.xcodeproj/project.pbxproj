@@ -16,6 +16,7 @@
 		BFAE66A31665E55D00F47322 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAE66A21665E55D00F47322 /* Cocoa.framework */; };
 		BFAE66AD1665E55D00F47322 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFAE66AB1665E55D00F47322 /* InfoPlist.strings */; };
 		BFF3E82E16663A6C004B8249 /* LICENSE.TXT in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E82D16663A6C004B8249 /* LICENSE.TXT */; };
+		F4F20A7D1A024E6300858054 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4F20A7C1A024E6300858054 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		BFAE66AC1665E55D00F47322 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BFAE66AE1665E55D00F47322 /* XcodeExplorer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XcodeExplorer-Prefix.pch"; sourceTree = "<group>"; };
 		BFF3E82D16663A6C004B8249 /* LICENSE.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.TXT; sourceTree = SOURCE_ROOT; };
+		F4F20A7C1A024E6300858054 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			children = (
 				BF69E4A716673E1C0045B66C /* en.lproj */,
 				BFAE66AA1665E55D00F47322 /* XcodeExplorer-Info.plist */,
+				F4F20A7C1A024E6300858054 /* Images.xcassets */,
 			);
 			path = Resources;
 			sourceTree = SOURCE_ROOT;
@@ -181,6 +184,7 @@
 				BFAE66AD1665E55D00F47322 /* InfoPlist.strings in Resources */,
 				BF46ED351665E5C2005C71E1 /* readme.md in Resources */,
 				BF46ED401665EA90005C71E1 /* XCENotificationsWindowController.xib in Resources */,
+				F4F20A7D1A024E6300858054 /* Images.xcassets in Resources */,
 				BFF3E82E16663A6C004B8249 /* LICENSE.TXT in Resources */,
 				BF1DB9AF166E917800EF717B /* XCEViewClickerWindowController.xib in Resources */,
 			);

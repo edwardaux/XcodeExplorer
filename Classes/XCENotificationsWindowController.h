@@ -14,8 +14,11 @@
 	
 	IBOutlet NSTextField *filterTextField;
 	IBOutlet NSTableView *tableView;
+    IBOutlet NSButton *recordButton;
+    IBOutlet NSButton *stopButton;
 }
 
--(IBAction)toggleRecording:(id)sender;
+-(IBAction)startRecording:(id)sender;
+-(IBAction)stopRecording:(id)sender;
 
 @end
