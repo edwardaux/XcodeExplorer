@@ -21,27 +21,31 @@
 
 -(void)windowDidLoad {
 	[filterTextField setStringValue:@"NS.*"];
+    filterTextField.window.titlebarAppearsTransparent = YES;
+    filterTextField.window.titleVisibility = NO;
 }
 
 #
 #pragma mark - Notification registering
 #
--(IBAction)toggleRecording:(id)sender {
-	if ([[sender title] isEqualToString:@"Start"]) {
-		[notifications removeAllObjects];
-		[tableView reloadData];
-		[self parseRegexTextField];
-		
-		[sender setTitle:@"Stop"];
-		[filterTextField setEnabled:NO];
-		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationListener:) name:nil object:nil];
-	}
-	else {
-		[[NSNotificationCenter defaultCenter] removeObserver:self];
-		[filterTextField setEnabled:YES];
-		[sender setTitle:@"Start"];
-	}
+-(IBAction)startRecording:(id)sender {
+    [notifications removeAllObjects];
+    [tableView reloadData];
+    [self parseRegexTextField];
+    
+    [filterTextField setEnabled:NO];
+    [recordButton setEnabled:NO];
+    [stopButton setEnabled:YES];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationListener:) name:nil object:nil];
 }
+
+-(IBAction)stopRecording:(id)sender {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [filterTextField setEnabled:YES];
+    [stopButton setEnabled:NO];
+    [recordButton setEnabled:YES];
+}
+
 
 -(void)notificationListener:(NSNotification *)notification {
     
