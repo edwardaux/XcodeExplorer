@@ -25,7 +25,10 @@ static XCEPlugin *mySharedPlugin = nil;
 
 -(id)init {
 	if (self = [super init]) {
-		[self addMenuItems];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(applicationDidFinishLaunching:)
+                                                     name:NSApplicationDidFinishLaunchingNotification
+                                                   object:nil];
 		[self setNotificationsController:nil];
 	}
 	return self;
@@ -65,5 +68,7 @@ static XCEPlugin *mySharedPlugin = nil;
 	[[self viewClickerController] showWindow:[NSApp mainWindow]];
 }
 
-
+-(void)applicationDidFinishLaunching:(NSNotification *)notification {
+    [self addMenuItems];
+}
 @end
