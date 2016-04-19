@@ -9,7 +9,7 @@
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>com.bdf.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -22,16 +22,6 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2012 BlackDog Foundry. All rights reserved.</string>
-	<key>NSPrincipalClass</key>
-	<string></string>
-	<key>XCGCReady</key>
-	<true/>
-	<key>XCPluginHasUI</key>
-	<false/>
-	<key>XC4Compatible</key>
-	<true/>
 	<key>DVTPlugInCompatibilityUUIDs</key>
 	<array>
 		<string>FEC992CC-CA4A-4CFD-8881-77300FCB848A</string>
@@ -52,5 +42,15 @@
 		<string>F41BD31E-2683-44B8-AE7F-5F09E919790E</string>
 		<string>ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C</string>
 	</array>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2012 BlackDog Foundry. All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string></string>
+	<key>XC4Compatible</key>
+	<true/>
+	<key>XCGCReady</key>
+	<true/>
+	<key>XCPluginHasUI</key>
+	<false/>
 </dict>
 </plist>
